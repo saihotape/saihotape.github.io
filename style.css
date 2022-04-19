@@ -1,0 +1,128 @@
+body {
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 320px;
+    color: #EE4747;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 77px;
+    text-shadow: 0px 4px 4px rgba(106, 0, 0, 0.29);
+    transition: .3s;
+}
+
+.btns {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btns a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background: #352C35;
+    margin: 12px;
+    border-radius: 100%;
+    text-align: center;
+    transition: 0.3s;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.00);;
+}
+
+.btns a:hover {
+    background: #161616;
+    border: 1px solid #2b2b2b;
+    box-sizing: border-box;
+}
+
+.btns a:active {
+    background: #171717;
+}
+
+.btns a i {
+    color: #CECECE;
+    font-size: 15px;
+    margin-top: 12px;
+}
+
+/*адаптация при маленькой ширине*/
+@media (min-width:0px) and (max-width:850px) {
+    .logo {
+        margin-top: 250px;
+    }
+
+    .btns {
+        top: 65%;
+    }
+
+    .btns a{
+        display: block;
+        height: 65px;
+        width: 480px;
+        margin: 40px;
+        border-radius: 10px;
+        background: #352C35;
+    }
+
+    .btns a:hover{
+        background: #161616;
+        transform: scale(1);
+        box-sizing: border-box;
+    }
+
+    .btns a i {
+        color: #C7C7C7;
+        font-size: 34px;
+        margin-top: 13px;
+    }
+}
+
+/**адабтация для мобильных устройств**/
+@media screen and (max-device-width: 1500px) {
+    .logo {
+        margin-top: 140px;
+        font-size: 50px;
+    }
+
+    .btns {
+        top: 65%;
+    }
+
+    .btns a{
+        display: block;
+        height: 70px;
+        width: 350px;
+        margin: 25px;
+        border-radius: 10px;
+        background: #352C35;
+    }
+
+    .btns a:hover{
+        background: #161616;
+        transform: scale(1);
+        box-sizing: border-box;
+    }
+
+    .btns a i {
+        color: #C7C7C7;
+        font-size: 35px;
+        margin-top: 16px;
+    }
+}
