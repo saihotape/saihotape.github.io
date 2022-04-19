@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
 body {
     background-color: white;
 }
@@ -12,25 +13,30 @@ a {
     padding: 0;
 }
 
-.logo {
-    display: flex;
-    justify-content: center;
-    margin-top: 320px;
-    color: #EE4747;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 64px;
-    line-height: 77px;
-    text-shadow: 0px 4px 4px rgba(106, 0, 0, 0.29);
-    transition: .3s;
-}
-
-.btns {
+.container_main {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    margin-top: -50px;
+}
+
+.logo {
+    display: flex;
+    color: #EE4747;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 77px;
+    text-shadow: 0px 4px 4px rgba(106, 0, 0, 0.29);
+}
+
+.btns {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    /* margin-left: 85px; */
 }
 
 .btns a{
@@ -41,7 +47,6 @@ a {
     margin: 12px;
     border-radius: 100%;
     text-align: center;
-    transition: 0.3s;
     box-sizing: border-box;
     border: 1px solid rgba(0, 0, 0, 0.00);;
 }
@@ -55,41 +60,39 @@ a {
 .btns a:active {
     background: #171717;
 }
-
 .btns a i {
     color: #CECECE;
     font-size: 15px;
-    margin-top: 12px;
+    margin-top: 11px;
 }
 
 /*адаптация при маленькой ширине*/
-@media (min-width:0px) and (max-width:850px) {
+@media (min-width:0px) and (max-width:891px) {
     .logo {
-        margin-top: 250px;
+        justify-content: center;
     }
 
     .btns {
-        top: 65%;
+        display: block;
+        margin-top: 50px;
     }
 
     .btns a{
         display: block;
-        height: 65px;
-        width: 480px;
-        margin: 40px;
-        border-radius: 10px;
-        background: #352C35;
+        height: 60px;
+        width: 410px;
+        margin: 20px;
+        border-radius: 15px;
+        background: #222222;
     }
 
     .btns a:hover{
         background: #161616;
-        transform: scale(1);
-        box-sizing: border-box;
     }
 
     .btns a i {
         color: #C7C7C7;
-        font-size: 34px;
+        font-size: 30px;
         margin-top: 13px;
     }
 }
@@ -102,6 +105,7 @@ a {
     }
 
     .btns {
+        display: block;
         top: 65%;
     }
 
