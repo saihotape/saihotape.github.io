@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
 body {
-    background-color: white;
+    background-color: #d67c94;
 }
 
 a {
@@ -23,13 +23,13 @@ a {
 
 .logo {
     display: flex;
-    color: #EE4747;
+    color: #ffffff;
     font-family: 'Noto Sans JP', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 64px;
     line-height: 77px;
-    text-shadow: 0px 4px 4px rgba(106, 0, 0, 0.29);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.486);
 }
 
 .btns {
@@ -102,6 +102,7 @@ a {
     .logo {
         margin-top: 140px;
         font-size: 50px;
+        justify-content: center;
     }
 
     .btns {
