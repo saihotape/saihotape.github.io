@@ -70,6 +70,7 @@ a {
 @media (min-width:0px) and (max-width:891px) {
     .logo {
         justify-content: center;
+        margin-top: 170px;
     }
 
     .btns {
@@ -100,7 +101,7 @@ a {
 /**адабтация для мобильных устройств**/
 @media screen and (max-device-width: 1200px) {
     .logo {
-        margin-top: 250px;
+        margin-top: 170px;
         font-size: 50px;
         justify-content: center;
     }
